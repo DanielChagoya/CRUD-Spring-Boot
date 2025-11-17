@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Usuarios</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+<div class="container">
+    <div class="header-bar">
+        <h1>Lista de Usuarios</h1>
+        <a href="/users/new" class="btn btn-primary">+ Nuevo Usuario</a>
+    </div>
+
+    <table class="user-table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user : ${users}">
+            <td th:text="${user.idUsuario}"></td>
+            <td th:text="${user.nombre}"></td>
+            <td th:text="${user.email}"></td>
+            <td class="actions">
+                <a th:href="@{/users/edit/{idUsuario}(idUsuario=${user.idUsuario})}"
+                   class="btn btn-edit">Editar</a>
+
+                <a th:href="@{/users/delete/{idUsuario}(idUsuario=${user.idUsuario})}"
+                   class="btn btn-danger"
+                   onclick="return confirm('¿Seguro que deseas eliminar este usuario?');">
+                    Eliminar
+                </a>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
