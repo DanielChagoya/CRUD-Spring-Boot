@@ -106,7 +106,7 @@ mvn spring-boot:run
 
 ## 📸 Capturas del proyecto
 
-![Listado](/src/main/resources/static/assets/ListaWEB.png)
+![Listado](/src/main/resources/static/assets/Listado.png)
 ![Formulario](/src/main/resources/static/assets/AgregarUsuario.png)
 
 ---
