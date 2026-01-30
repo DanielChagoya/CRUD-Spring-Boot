@@ -99,9 +99,9 @@ La carpeta database/ contiene scripts SQL de apoyo para consultas y pruebas dura
 ## 📸 Capturas de pantalla
 
 ### Vista principal
-![Vista principal](src/main/resources/static/assets/usuarios.png)
-![Editar Usuario](src/main/resources/static/assets/editar.png)
-![Nuevo Usuario](src/main/resources/static/assets/add.png)
+![Vista principal](src/main/resources/static/assets/usuarios_l.png)
+![Editar Usuario](src/main/resources/static/assets/editar_u.png)
+![Nuevo Usuario](src/main/resources/static/assets/add_u.png)
 ![Estado](src/main/resources/static/assets/desplegable1.png)
 ![Municipios](src/main/resources/static/assets/desplegable2.png)
 ---
